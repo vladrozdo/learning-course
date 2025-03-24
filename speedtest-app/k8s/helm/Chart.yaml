@@ -1,0 +1,4 @@
+apiVersion: v2
+name: speedtest-app
+description: A Helm chart for deploying Speedtest app
+version: 0.1.0

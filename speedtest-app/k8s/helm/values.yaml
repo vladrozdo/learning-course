@@ -1,0 +1,10 @@
+mysql:
+  image: mysql:5.7
+  password: password
+  database: speedtest_db
+
+backend:
+  image: my-backend-image
+
+frontend:
+  image: my-frontend-image
