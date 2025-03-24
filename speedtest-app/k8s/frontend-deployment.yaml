@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend-deployment
+  namespace: speedtest
 spec:
   replicas: 1
   selector:
@@ -14,6 +15,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: my-frontend-image
+        image: filin9229/my-frontend-image:latest
         ports:
         - containerPort: 80

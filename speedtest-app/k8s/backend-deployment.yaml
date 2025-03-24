@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
+  namespace: speedtest
 spec:
   replicas: 1
   selector:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: my-backend-image
+        image: filin9229/my-backend-image:latest
         ports:
         - containerPort: 8000
         env:
